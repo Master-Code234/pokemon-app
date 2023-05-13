@@ -2,14 +2,15 @@ const React = require("react");
 
 class Show extends React.Component {
   render() {
-    const { pokemons } = this.props;
-
     return (
       <div>
         <h1>Gotta Catch 'Em All</h1>
-        <h2>{pokemons.name[0].toUpperCase() + pokemons.name.substring(1)}</h2>
+        <h2>
+          {this.props.pokemon.name[0].toUpperCase() +
+            this.props.pokemon.name.substring(1)}
+        </h2>
 
-        <img src={pokemons.img + ".jpg"} alt={` Picture of ${pokemons.name}`} />
+        <br />
 
         <a href="/pokemon">Back</a>
       </div>
