@@ -16,7 +16,7 @@ class Index extends React.Component {
               data.name[0].toUpperCase() + data.name.substring(1);
             return (
               <li>
-                <a href={`/pokemon/${i}`}>{displayPokemon} </a>
+                <a href={`/pokemon/${data.id}`}>{displayPokemon} </a>
               </li>
             );
           })}
